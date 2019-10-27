@@ -1,0 +1,15 @@
+body {
+    background-color: #1f6ff0;
+}
+
+.card-hover .reveal {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card-hover:hover .reveal {
+    height: auto;
+    visibility: visible;
+    opacity: 10;
+    transition: opacity 1s ease;
+}

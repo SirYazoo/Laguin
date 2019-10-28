@@ -1,5 +1,6 @@
 body {
-    background-color: #1f6ff0;
+    background-color: rgba(22, 28, 202, 0.76);
+    color: white;
 }
 
 .card-hover .reveal {
@@ -12,4 +13,8 @@ body {
     visibility: visible;
     opacity: 10;
     transition: opacity 1s ease;
+}
+
+.nav-tabs .tab-1 .nav-link:not(.active) {
+    color: white;
 }

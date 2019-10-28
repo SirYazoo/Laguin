@@ -13,108 +13,97 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-xl-1" style="background-color: white;">
-                <img src="img/laguin.jpg" alt="Laguin.net" width="140px" height="97px">
+                <img src="img/laguin.jpg" alt="Laguin.net" width="125px" height="97px">
             </div>
             <div class="col-xl-11" style="color: white; background-color: gray;">
                 <h1>Laguin.net</h1>
                 <h4>MP3 Player and Music Download</h4>
             </div>
         </div>
-        <nav class="navbar navbar-dark navbar-expand-xl sticky-top" style="background-color: #202325;">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#Home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Download">Download</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#About">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Logout">Logout</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#TopGlobal">Top Global</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Genre">Genre</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0 ml-auto" action="/action_page.php">
-                <input class="form-control mr-lg-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-light my-2 my-lg-0" type="submit">Search</button>
-            </form>
-        </nav>
-        <div class="card-deck home">
-            <div class="card card-hover">
-                <img class="card-img-top" src="img/xomu.jpg" alt="Xomu">
-                <div class="reveal card-img-overlay">
-                    <i class="fa fa-play-circle"></i>
+        <ul class="nav nav-tabs">
+            <li class="nav-item tab-1">
+                <a class="nav-link active border border-light" data-toggle="tab" href="#home">Home</a>
+            </li>
+            <li class="nav-item tab-1">
+                <a class="nav-link" data-toggle="tab" href="#download">Download</a>
+            </li>
+            <li class="nav-item tab-1">
+                <a class="nav-link" data-toggle="tab" href="#topGlobal">Top Global</a>
+            </li>
+            <li class="nav-item tab-1">
+                <a class="nav-link" data-toggle="tab" href="#genre">Genre</a>
+            </li>
+            <li class="nav-item tab-1">
+                <a class="nav-link" data-toggle="tab" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-outline-light my-2 my-lg-0" type="submit">Logout</button>
+            </li>
+            <li class="nav-item ml-auto">
+                <form class="form-inline my-2 my-lg-0" action="/action_page.php">
+                    <input class="form-control mr-lg-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-light my-2 my-lg-0" type="submit">Search</button>
+                </form>
+            </li>
+        </ul>
+        <br>
+        <div class="tab-content">
+            <div class="container-fluid tab-pane active" id="home">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="img/bee_gees.jpg" alt="Bee Gees">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/acdcLogo.jpg" alt="AC/DC">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/queenLogo.jpg" alt="Queen">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/rodstewart.jpg" alt="Rod Stewart">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/slash.jpg" alt="Slash">
+                    </div>
+                </div>
+                <div class="card-deck mt-2">
+                    <div class="card">
+                        <img class="card-img-top" src="img/jimi-hendrix-3.jpg" alt="Jimi Hendrix">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/johnlennon.jpg" alt="John Lennon">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/LinkinParkLogo.jpg" alt="Linkin Park">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/JohnMayerNewLight.jpg" alt="John Mayer">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/xomu.jpg" alt="Xomu">
+                    </div>
                 </div>
             </div>
-            <div class="card view overlay">
-                <img class="card-img-top img-fluid" src="img/xomu.jpg" alt="Xomu">
-                <div class="mask flex-center rgba-black-strong">
-                    <i class="fa fa-play-circle"></i>
-                </div>
+            <div class="container-fluid tab-pane fade" id="download">
+
             </div>
-            <div class="card view overlay">
-                <img class="card-img-top img-fluid" src="img/xomu.jpg" alt="Xomu">
-                <div class="mask flex-center rgba-black-strong">
-                    <i class="fa fa-play-circle"></i>
-                </div>
+            <div class="container-fluid tab-pane fade" id="top-global">
+
             </div>
-            <div class="card view overlay">
-                <img class="card-img-top img-fluid" src="img/xomu.jpg" alt="Xomu">
-                <div class="mask flex-center rgba-black-strong">
-                    <i class="fa fa-play-circle"></i>
-                </div>
+            <div class="container-fluid tab-pane fade" id="genre">
+
             </div>
-            <div class="card view overlay">
-                <img class="card-img-top img-fluid" src="img/xomu.jpg" alt="Xomu">
-                <div class="mask flex-center rgba-black-strong">
-                    <i class="fa fa-play-circle"></i>
-                </div>
+            <div class="container-fluid tab-pane fade" id="download">
+
             </div>
-        </div>
-        <div class="card-deck home mt-2">
-            <div class="card view overlay">
-                <img class="card-img-top img-fluid" src="img/xomu.jpg" alt="Xomu">
-                <div class="mask flex-center rgba-black-strong">
-                    <i class="fa fa-play-circle"></i>
-                </div>
+            <div class="container-fluid tab-pane fade" id="about">
+                <h3>About Us</h3>
+                <p>Laguin is a digital music, podcast, and video streaming service that gives you access to millions of
+                    songs and other content from artists all over the world.</p>
             </div>
-            <div class="card view overlay">
-                <img class="card-img-top img-fluid" src="img/xomu.jpg" alt="Xomu">
-                <div class="mask flex-center rgba-black-strong">
-                    <i class="fa fa-play-circle"></i>
-                </div>
-            </div>
-            <div class="card view overlay">
-                <img class="card-img-top img-fluid" src="img/xomu.jpg" alt="Xomu">
-                <div class="mask flex-center rgba-black-strong">
-                    <i class="fa fa-play-circle"></i>
-                </div>
-            </div>
-            <div class="card view overlay">
-                <img class="card-img-top img-fluid" src="img/xomu.jpg" alt="Xomu">
-                <div class="mask flex-center rgba-black-strong">
-                    <i class="fa fa-play-circle"></i>
-                </div>
-            </div>
-            <div class="card view overlay">
-                <img class="card-img-top img-fluid" src="img/xomu.jpg" alt="Xomu">
-                <div class="mask flex-center rgba-black-strong">
-                    <i class="fa fa-play-circle"></i>
-                </div>
-            </div>
-        </div>
-        <div class="about">
-            
         </div>
     </div>
 </body>
